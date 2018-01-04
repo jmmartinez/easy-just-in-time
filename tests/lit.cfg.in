@@ -25,7 +25,6 @@ for ld_path in ld_paths:
   ld_flags = ld_flags + " -L'" + os.path.abspath(ld_path) + "' -rpath '" + os.path.abspath(ld_path) + "' "
 
 ld_flags = ld_flags + " -l" + runtime_lib
-ld_flags = ld_flags + " -lLLVMSupport" #TODO: I don't know why I have to pass Support here. It should not be required.
 
 
 

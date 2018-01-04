@@ -1,4 +1,4 @@
-llvm_map_components_to_libnames(RUNTIME_LLVM_LIBS all)
+llvm_map_components_to_libnames(RUNTIME_LLVM_LIBS core codegen interpreter support mcjit native executionengine passes objcarcopts )
 
 add_library(EasyJitRuntime SHARED
   pass/InlineParameters.cpp
